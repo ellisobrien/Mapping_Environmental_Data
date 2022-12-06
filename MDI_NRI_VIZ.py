@@ -51,7 +51,8 @@ map_array = np.delete(map_array, index)
 
 #Enter Variables to Map here
 answer2=st.selectbox(label="What variable would you like to Map?",
-options=(map_array))
+options=('RISK_SCORE', 'RISK_RATNG', 'RISK_NPCTL', 'RISK_SPCTL', 'EAL_SCORE', 'EAL_RATNG', 'EAL_NPCTL',	'EAL_SPCTL', 'EAL_VALT', 'EAL_VALB', 'EAL_VALP', 'EAL_VALPE',
+'EAL_VALA',	'SOVI_SCORE', 'SOVI_RATNG',	'SOVI_NPCTL'))
 
 
 #Enter Variable Description
@@ -82,11 +83,13 @@ st.write('Viewing Relationships for National Risk Index Data.')
 
 #Enter X variable and Description
 answer_3x=st.selectbox(label="What variable would you like as an X-Value?",
-options=(map_array))
+options=('RISK_SCORE', 'RISK_RATNG', 'RISK_NPCTL', 'RISK_SPCTL', 'EAL_SCORE', 'EAL_RATNG', 'EAL_NPCTL',	'EAL_SPCTL', 'EAL_VALT', 'EAL_VALB', 'EAL_VALP', 'EAL_VALPE',
+'EAL_VALA',	'SOVI_SCORE', 'SOVI_RATNG',	'SOVI_NPCTL'))
 
 #Enter Y Variable and Description
 answer_3y=st.selectbox(label="What variable would you like as a Y-Value?",
-options=(map_array))
+options=('RISK_SCORE', 'RISK_RATNG', 'RISK_NPCTL', 'RISK_SPCTL', 'EAL_SCORE', 'EAL_RATNG', 'EAL_NPCTL',	'EAL_SPCTL', 'EAL_VALT', 'EAL_VALB', 'EAL_VALP', 'EAL_VALPE',
+'EAL_VALA',	'SOVI_SCORE', 'SOVI_RATNG',	'SOVI_NPCTL'))
 
 
 def scatter_plot(x_value, y_value):
