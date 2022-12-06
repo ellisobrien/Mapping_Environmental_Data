@@ -35,7 +35,7 @@ fig1 = px.choropleth(df_state, locations='STATE', color='per_cap_loss',
                                locationmode="USA-states",
                                labels={'EAL_VALT':'Expected Annual Loss', 'STCOFIPS':'FIPS'},
                               )
-fig1.update_layout(title_text = '<b>Risk Score by State</b> <br><sup>West Coast and Tornado Alley Have Highest Per Capita Loss</sup>',title_y=0.8, title_x=0.75, geo_scope='usa')
+fig1.update_layout(title_text = '<b>Per Capita Loss by State</b>',title_y=0.85, title_x=0.7, geo_scope='usa')
 st.plotly_chart(fig1)
 
 st.subheader('Mapping County Level Data')
