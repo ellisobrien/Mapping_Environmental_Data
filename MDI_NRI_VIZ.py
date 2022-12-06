@@ -16,7 +16,7 @@ st.sidebar.selectbox('Select Page', ('Home', 'Maps', 'Scatterplot', 'Bargraph'))
 with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
     counties = json.load(response)
 
-df_counties = pd.read_csv("/Users/ellisobrien/Desktop/Georgetown Semester 3/DataViz/NRI_Table_Counties/NRI_Table_Counties.csv",
+df_counties = pd.read_csv("https://raw.githubusercontent.com/ellisobrien/Mapping_Environmental_Data/main/NRI_Table_Counties.csv",
                    dtype={"STCOFIPS": str})
 
 st.title("Visualizing National Risk Index Data")
