@@ -51,7 +51,7 @@ map_array = np.delete(map_array, index)
 
 #Enter Variables to Map here
 answer2=st.selectbox(label="What variable would you like to Map?",
-options=(map_array))
+options=('RISK_SCORE', map_array))
 
 
 #Enter Variable Description
@@ -82,7 +82,7 @@ st.write('Viewing Relationships for National Risk Index Data.')
 
 #Enter X variable and Description
 answer_3x=st.selectbox(label="What variable would you like as an X-Value?",
-options=(map_array))
+options=('map_array))
 
 #Enter Y Variable and Description
 answer_3y=st.selectbox(label="What variable would you like as a Y-Value?",
