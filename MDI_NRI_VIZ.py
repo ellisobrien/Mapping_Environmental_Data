@@ -51,7 +51,7 @@ map_array = np.delete(map_array, index)
 
 #Enter Variables to Map here
 answer2=st.selectbox(label="What variable would you like to Map?",
-options=('RISK_SCORE', map_array))
+options=(map_array))
 
 
 #Enter Variable Description
@@ -64,7 +64,7 @@ Map_Range=(0,40)
 def county_map(input_var):
     fig2 = px.choropleth_mapbox(df_counties,geojson=counties, locations='STCOFIPS', color=input_var,
                                color_continuous_scale="balance",
-                               range_color=Map_Range,
+                             #  range_color=Map_Range,
                                mapbox_style="carto-positron",
                                zoom=3, center = {"lat": 37.0902, "lon": -95.7129},
                                opacity=0.5,
@@ -82,7 +82,7 @@ st.write('Viewing Relationships for National Risk Index Data.')
 
 #Enter X variable and Description
 answer_3x=st.selectbox(label="What variable would you like as an X-Value?",
-options=('map_array))
+options=(map_array))
 
 #Enter Y Variable and Description
 answer_3y=st.selectbox(label="What variable would you like as a Y-Value?",
